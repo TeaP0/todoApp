@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(90deg,  #8a2c00, #580058);
+  color: #f7efe6;
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header{
+  font-size: 2rem;
+  margin-top: 10%;
+  text-align: center;
+}
+
+form{
+  background-color: #3a005e;
+  min-width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem;
+}
+
+form input{
+  width: 90%;
+  background-color: #3a005e;
+  color: #fdfcfb;
+}
+
+input:focus {
+  outline: none;
+}
+
+form input, form button{
+  font-size: 1.5rem;
+  padding: 0.8rem;
+  border: none;
+}
+
+form button{
+  color: #e47347; 
+  background: #3a005e;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover{
+  background: #e47347;
+  color:#3a005e;
+}
+
+.todo-box{
+  width: 60%;
+  margin: 0.25rem;
+}
+
+.todo-list {
+   list-style: none;
+ }
+
+.todo-item {
+   display: flex;
+   flex-direction: row;
+   background: #5e0056;
+   color: #fdfcfb;
+   margin-bottom: 0.5rem;
+   font-size: 1.5rem;
+   transition: all 0.5s ease;
+}
+
+.aTask {
+  padding: 0.7rem;
+  flex: 1;
+  word-break: break-all;
+}
+
+li{
+  width: 100%;
+}
+
+.todo-item a{
+  text-decoration: none;
+  color:#fdfcfb;
+ }
+
+.del-button{
+  flex: 0;
+  display: flex;
+  align-items: center;
+  background:#e47347;
+  color:#290066;
+  padding: 0.7rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+.del-button:hover {
+  background:#5e0056;
+  color:#fdfcfb;
+}
+
+.aTask:hover {
+  background-color: #009191;
+  text-decoration: line-through;
+  color: white;
+  opacity: 0.7;
+
+}
+
+.deleting {
+  transform: translateX(-300px);
+  transition: all 0.3s ease;
+  opacity: 0%;
+}
+
+.done {
+  background-color: #009191;
+  text-decoration: line-through;
+  color: white;
+  opacity: 0.7;
+}
+
+i {
+  pointer-events: none; 
+}
